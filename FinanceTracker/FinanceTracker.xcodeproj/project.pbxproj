@@ -6,6 +6,15 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		E00B09A62EF0AC0B00E4D9A4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E00B09A52EF0AC0B00E4D9A4 /* Assets.xcassets */; };
+		E00B09AF2EF0ACE300E4D9A4 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = E00B09AE2EF0ACE300E4D9A4 /* FirebaseAuth */; };
+		E08FCEE22EEE56B9001CB926 /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = E08FCEE12EEE56B9001CB926 /* FirebaseAnalytics */; };
+		E08FCEE42EEE56B9001CB926 /* FirebaseAnalyticsCore in Frameworks */ = {isa = PBXBuildFile; productRef = E08FCEE32EEE56B9001CB926 /* FirebaseAnalyticsCore */; };
+		E08FCEE62EEE56B9001CB926 /* FirebaseCore in Frameworks */ = {isa = PBXBuildFile; productRef = E08FCEE52EEE56B9001CB926 /* FirebaseCore */; };
+		E08FCEE82EEE56B9001CB926 /* FirebaseCrashlytics in Frameworks */ = {isa = PBXBuildFile; productRef = E08FCEE72EEE56B9001CB926 /* FirebaseCrashlytics */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXContainerItemProxy section */
 		E01C960C2EEE4A3200DFABEE /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -24,17 +33,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		E00B09A52EF0AC0B00E4D9A4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E01C95FE2EEE4A3100DFABEE /* FinanceTracker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FinanceTracker.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E01C960B2EEE4A3200DFABEE /* FinanceTrackerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FinanceTrackerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E01C96152EEE4A3200DFABEE /* FinanceTrackerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FinanceTrackerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
-		E01C96002EEE4A3100DFABEE /* FinanceTracker */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			path = FinanceTracker;
-			sourceTree = "<group>";
-		};
 		E01C960E2EEE4A3200DFABEE /* FinanceTrackerTests */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
 			path = FinanceTrackerTests;
@@ -45,6 +50,26 @@
 			path = FinanceTrackerUITests;
 			sourceTree = "<group>";
 		};
+		E08FCCAF2EEE4B0F001CB926 /* Coordinator */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = Coordinator;
+			sourceTree = "<group>";
+		};
+		E08FCD852EEE4FFE001CB926 /* Views */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = Views;
+			sourceTree = "<group>";
+		};
+		E08FCEE92EEE5781001CB926 /* App */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = App;
+			sourceTree = "<group>";
+		};
+		E08FCEED2EEE5823001CB926 /* Services */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = Services;
+			sourceTree = "<group>";
+		};
 /* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,6 +77,11 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E08FCEE22EEE56B9001CB926 /* FirebaseAnalytics in Frameworks */,
+				E00B09AF2EF0ACE300E4D9A4 /* FirebaseAuth in Frameworks */,
+				E08FCEE82EEE56B9001CB926 /* FirebaseCrashlytics in Frameworks */,
+				E08FCEE62EEE56B9001CB926 /* FirebaseCore in Frameworks */,
+				E08FCEE42EEE56B9001CB926 /* FirebaseAnalyticsCore in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -72,12 +102,24 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		E00B09AD2EF0ACE300E4D9A4 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		E01C95F52EEE4A3100DFABEE = {
 			isa = PBXGroup;
 			children = (
-				E01C96002EEE4A3100DFABEE /* FinanceTracker */,
+				E00B09A52EF0AC0B00E4D9A4 /* Assets.xcassets */,
+				E08FCEED2EEE5823001CB926 /* Services */,
+				E08FCEE92EEE5781001CB926 /* App */,
+				E08FCD852EEE4FFE001CB926 /* Views */,
+				E08FCCAF2EEE4B0F001CB926 /* Coordinator */,
 				E01C960E2EEE4A3200DFABEE /* FinanceTrackerTests */,
 				E01C96182EEE4A3200DFABEE /* FinanceTrackerUITests */,
+				E00B09AD2EF0ACE300E4D9A4 /* Frameworks */,
 				E01C95FF2EEE4A3100DFABEE /* Products */,
 			);
 			sourceTree = "<group>";
@@ -108,10 +150,18 @@
 			dependencies = (
 			);
 			fileSystemSynchronizedGroups = (
-				E01C96002EEE4A3100DFABEE /* FinanceTracker */,
+				E08FCCAF2EEE4B0F001CB926 /* Coordinator */,
+				E08FCD852EEE4FFE001CB926 /* Views */,
+				E08FCEE92EEE5781001CB926 /* App */,
+				E08FCEED2EEE5823001CB926 /* Services */,
 			);
 			name = FinanceTracker;
 			packageProductDependencies = (
+				E08FCEE12EEE56B9001CB926 /* FirebaseAnalytics */,
+				E08FCEE32EEE56B9001CB926 /* FirebaseAnalyticsCore */,
+				E08FCEE52EEE56B9001CB926 /* FirebaseCore */,
+				E08FCEE72EEE56B9001CB926 /* FirebaseCrashlytics */,
+				E00B09AE2EF0ACE300E4D9A4 /* FirebaseAuth */,
 			);
 			productName = FinanceTracker;
 			productReference = E01C95FE2EEE4A3100DFABEE /* FinanceTracker.app */;
@@ -195,6 +245,9 @@
 			);
 			mainGroup = E01C95F52EEE4A3100DFABEE;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				E08FCEE02EEE56B9001CB926 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = E01C95FF2EEE4A3100DFABEE /* Products */;
 			projectDirPath = "";
@@ -212,6 +265,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E00B09A62EF0AC0B00E4D9A4 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -558,6 +612,45 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		E08FCEE02EEE56B9001CB926 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 12.7.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		E00B09AE2EF0ACE300E4D9A4 /* FirebaseAuth */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = E08FCEE02EEE56B9001CB926 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAuth;
+		};
+		E08FCEE12EEE56B9001CB926 /* FirebaseAnalytics */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = E08FCEE02EEE56B9001CB926 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAnalytics;
+		};
+		E08FCEE32EEE56B9001CB926 /* FirebaseAnalyticsCore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = E08FCEE02EEE56B9001CB926 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAnalyticsCore;
+		};
+		E08FCEE52EEE56B9001CB926 /* FirebaseCore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = E08FCEE02EEE56B9001CB926 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseCore;
+		};
+		E08FCEE72EEE56B9001CB926 /* FirebaseCrashlytics */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = E08FCEE02EEE56B9001CB926 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseCrashlytics;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = E01C95F62EEE4A3100DFABEE /* Project object */;
 }
