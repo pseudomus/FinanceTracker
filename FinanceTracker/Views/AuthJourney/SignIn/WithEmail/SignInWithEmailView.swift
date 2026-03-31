@@ -24,7 +24,7 @@ struct SignInWithEmailView: View {
                 .cornerRadius(10)
 
             Button {
-
+                vm.signIn()
             } label: {
                 Text("sign in ")
 

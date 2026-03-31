@@ -7,7 +7,6 @@
 
 import Foundation
 
-@MainActor
 class SignInWithEmailViewModel: ObservableObject {
     @Published var email: String = ""
     @Published var password: String = ""
@@ -15,5 +14,19 @@ class SignInWithEmailViewModel: ObservableObject {
 
     func navigate(to destination: DestinationEnum) {
         coordinator?.navigate(to: destination)
+    }
+
+    func signIn() {
+        guard !email.isEmpty, !password.isEmpty else { return }
+        Task {
+            do {
+                let returnedUserData = try await AuthenticationManager.shared.createUser(email: email, password: password)
+                print("success")
+                print(returnedUserData)
+            } catch {
+                print(error.localizedDescription)
+            }
+        }
+
     }
 }
